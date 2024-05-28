@@ -1,0 +1,130 @@
+.page-header {
+    width: 100%;
+    max-width: 1104px;
+}
+
+/* Topnav */
+
+.page-header nav {
+    background-color: var(--white);
+}
+
+.page-header nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.page-header nav li {
+    height: 17px;
+}
+
+.page-header nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--very-dark-blue);
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.09375rem;
+}
+
+.page-header nav a:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.page-header nav li:first-child {
+    margin-right: auto;
+}
+
+.page-header nav li:not(:first-child) {
+    margin-left: 46px;
+}
+
+/* Sidebar */
+
+.page-header nav .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 375px;
+    padding: 40px 32px;
+    z-index: 10;
+    background-color: var(--very-dark-blue);
+    backdrop-filter: blur(16.309690475463867px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    opacity: .95;
+}
+
+.page-header nav .sidebar .wrapper-2 li {
+    display: flex;
+    justify-content: center;
+    height: 66px;
+}
+
+.page-header nav .sidebar li:not(:first-child) {
+    margin-left: unset;
+}
+
+.page-header nav .sidebar a {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.14425rem;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+.sidebar .wrapper-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25px;
+}
+
+.sidebar .wrapper-2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.sidebar .wrapper-2 li {
+    padding: 24px 0;
+    border-top: 1px solid var(--transparent-white);
+}
+
+.sidebar .wrapper-2 {
+    position: relative;
+}
+
+.sidebar .wrapper-2 li:last-of-type {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 40px;
+    border-top: none;
+}
