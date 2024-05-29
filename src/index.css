@@ -20,16 +20,9 @@ button {
 
 .page-container {
   width: 100%;
-  padding: 48px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .page-container {
-    padding: 40px 32px;
-  }
 }
 
 /* Colors */
@@ -53,4 +46,10 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   color: var(--very-dark-blue);
+}
+
+/* Images */
+
+img {
+  width: 100%;
 }
