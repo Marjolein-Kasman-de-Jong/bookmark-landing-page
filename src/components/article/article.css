@@ -1,0 +1,56 @@
+article {
+    max-width: 540px;
+}
+
+h1 {
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.25rem;
+    letter-spacing: -0.00938rem;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.00588rem;
+    }
+}
+
+article p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    opacity: .5;
+}
+
+@media screen and (max-width: 768px) {
+    article p {
+        text-align: center;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+    }
+}
+
+article footer {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    article footer {
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Controleren of deze doet wat ie moet doen */
+.features article footer {
+    margin-top: 16px;
+}

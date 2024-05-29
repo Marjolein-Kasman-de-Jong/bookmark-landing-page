@@ -1,10 +1,10 @@
 .intro {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
-    gap: 27.5px;
+    gap: 50px;
     height: 32.5vw;
     max-height: 465px;
+    padding: 0 0 0 32px;
     overflow: hidden;
 }
 
@@ -12,19 +12,27 @@
     .intro {
         flex-direction: column-reverse;
         justify-content: unset;
-        gap: unset;
+        gap: 48px;
         height: unset;
         max-height: unset;
+        padding: unset;
     }
 }
 
-.intro .text-container,
+@media screen and (min-width: 769px) and (max-width: 1077px) {
+    .intro {
+        height: auto;
+    }
+}
+
+
+.intro .intro-text-container,
 .intro .image-container {
     width: 50%;
 }
 
 @media screen and (max-width: 768px) {
-    .intro .text-container,
+    .intro .intro-text-container,
     .intro .image-container {
         width: 100%;
     }
@@ -34,7 +42,6 @@
 
 .intro .image-container {
     position: relative;
-    border: 1px solid blue;
 }
 
 .intro .image-wrapper {
@@ -72,4 +79,18 @@
     z-index: -5;
     border-radius: 316.5px;
     background: var(--soft-blue);
+}
+
+/* Intro text */
+
+.intro-text-container {
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-text-container {
+        justify-content: center;
+        padding: 0 32px;
+    }
 }
