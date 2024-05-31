@@ -1,0 +1,24 @@
+.features {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        margin-top: 140px;
+    }
+}
+
+.features-container {
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .features-container {
+        margin-top: 8px;
+    }
+}
+

@@ -1,6 +1,8 @@
-article {
+/* article {
     max-width: 540px;
-}
+} */
+
+/* Heading */
 
 h1 {
     margin-bottom: 24px;
@@ -21,20 +23,87 @@ h1 {
     }
 }
 
+h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.25rem;
+    letter-spacing: -0.00625rem;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        margin-bottom: unset;
+        font-size: 1.5rem;
+        letter-spacing: -0.00469rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.25rem;
+    letter-spacing: -0.00625rem;
+}
+
+h3:first-letter {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: -0.00469rem;
+    }
+}
+
+/* Paragraph */
+
 article p {
+    text-align: center;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.75rem;
     opacity: .5;
 }
 
+.intro article p {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .intro article p {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     article p {
-        text-align: center;
         font-size: 0.9375rem;
         line-height: 1.5625rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .features p {
+        padding: 0 32px;
+    }
+}
+
+.feature p {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .feature p {
+        text-align: center;
+    }
+}
+
+/* Footer */
 
 article footer {
     display: flex;
@@ -48,9 +117,4 @@ article footer {
         gap: 14px;
         flex-wrap: wrap;
     }
-}
-
-/* Controleren of deze doet wat ie moet doen */
-.features article footer {
-    margin-top: 16px;
 }

@@ -9,15 +9,22 @@ import './article.css';
 function Article({ title, text, buttonType, buttonText }) {
     const articleRef = useRef(null);
     const [isChildOfIntro, setIsChildOfIntro] = useState(false);
+    const [isChildOfFeature, setIsChildOfFeature] = useState(false);
 
-    // Check if article is a child of .intro
     useEffect(() => {
         if (articleRef.current) {
             const parentElement = articleRef.current.parentElement;
-            if (parentElement && parentElement.classList.contains('intro-text-container')) {
+            // Check if article is a child of .intro
+            if (parentElement && parentElement.classList.contains('intro')) {
                 setIsChildOfIntro(true);
             } else {
                 setIsChildOfIntro(false);
+            }
+            // Check is article is a child of .feature
+            if (parentElement && parentElement.classList.contains('feature')) {
+                setIsChildOfFeature(true);
+            } else {
+                setIsChildOfFeature(false);
             }
         }
     }, [])
@@ -25,9 +32,14 @@ function Article({ title, text, buttonType, buttonText }) {
     return (
         <article ref={articleRef}>
             <header>
-                {/* Render h1 if article is a child of .intro, else render h2 */}
                 {
-                    isChildOfIntro ? <h1>{title}</h1> : <h2>{title}</h2>
+                    isChildOfIntro ?
+                        <h1>{title}</h1>
+                        :
+                        isChildOfFeature ?
+                            <h3>{title}</h3>
+                            :
+                            <h2>{title}</h2>
                 }
             </header>
             <p>
@@ -35,7 +47,7 @@ function Article({ title, text, buttonType, buttonText }) {
             </p>
             <footer>
                 {
-                    buttonText.map((item) => {
+                    buttonText && buttonText.map((item) => {
                         return <Button key={item} type={buttonType} buttonText={item} />
                     })
                 }
