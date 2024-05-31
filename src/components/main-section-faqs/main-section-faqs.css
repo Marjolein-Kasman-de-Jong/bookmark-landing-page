@@ -1,0 +1,45 @@
+.faqs {
+    border: 1px solid black;
+    margin-top: 149px;
+}
+
+@media screen and (max-width: 768px) {
+    .faqs {
+        margin-top: 140px;
+    }
+}
+
+.faqs article {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .faqs article {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faqs h2 {
+        line-height: 1.875rem;
+        letter-spacing: -0.00469rem;
+        margin-bottom: 16px;
+    }
+}
+
+.faqs footer {
+    margin-top: unset;
+}
+
+.faqs-container {
+    max-width: 540px;
+    margin: 56px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .faqs-container {
+        margin: 64px 32px 0 32px;
+    }
+}
+

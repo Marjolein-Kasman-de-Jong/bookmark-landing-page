@@ -1,0 +1,37 @@
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+    border-top: 1px solid rgba(73, 93, 207, 0.20);
+    border-bottom: 1px solid rgba(73, 93, 207, 0.20);
+}
+
+.question h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .question h3 {
+        font-size: 0.9375rem;
+    }
+}
+
+.answer p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: 0.00938rem;
+    opacity: .75;
+}
+
+@media screen and (max-width: 768px) {
+    .anwer p {
+        font-size: 0.9375rem;
+        line-height: 1.875rem;
+        letter-spacing: 0.00881rem;
+    }
+}
