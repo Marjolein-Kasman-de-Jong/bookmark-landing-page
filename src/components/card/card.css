@@ -1,0 +1,49 @@
+.card {
+    width: 280px;
+    height: 371px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .logo {
+    width: auto;
+    height: 100px;
+    margin-top: 49px;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.01563rem;
+    margin-top: 32px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    opacity: 0.5;
+    margin-top: 6px;
+}
+
+.card .dots {
+    margin-top: 32px;
+}
+
+.card footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card button {
+    width: 232px;
+}

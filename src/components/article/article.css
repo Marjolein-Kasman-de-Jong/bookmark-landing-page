@@ -47,6 +47,14 @@ h2 {
     }
 }
 
+.extensions article h2 {
+    text-transform: unset;
+}
+
+.extensions article h2::first-letter {
+    text-transform: uppercase;
+}
+
 h3 {
     font-size: 2rem;
     font-weight: 500;
@@ -113,6 +121,21 @@ article p {
     .feature p {
         text-align: center;
     }
+}
+
+.extensions article p {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .extensions article p {
+        padding: 0 32px;
+    }
+}
+
+.extensions article footer {
+    margin-top: unset;
 }
 
 /* Footer */
