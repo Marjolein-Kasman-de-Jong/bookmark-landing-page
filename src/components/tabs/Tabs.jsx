@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react-router-dom';
 
 // Components
 import Feature from '../feature/Feature';
@@ -69,6 +69,10 @@ function Tabs() {
                             text='Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
                             image={feature3}
                         />}
+                    />
+                    <Route 
+                        path='*'
+                        element={<Navigate to="/simple-bookmarking" replace />}
                     />
                 </Routes>
 

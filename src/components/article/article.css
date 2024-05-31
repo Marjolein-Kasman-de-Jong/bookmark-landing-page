@@ -1,7 +1,3 @@
-/* article {
-    max-width: 540px;
-} */
-
 /* Heading */
 
 h1 {
@@ -41,6 +37,16 @@ h2 {
     }
 }
 
+.feature-container article h2 {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container article h2 {
+        text-align: center;
+    }
+}
+
 h3 {
     font-size: 2rem;
     font-weight: 500;
@@ -70,12 +76,18 @@ article p {
     opacity: .5;
 }
 
-.intro article p {
+.intro article p,
+.feature-container article p {
     text-align: left;
 }
 
+.feature article p {
+    background-color: red;
+}
+
 @media screen and (max-width: 768px) {
-    .intro article p {
+    .intro article p,
+    .feature-container article p {
         text-align: center;
     }
 }
@@ -116,5 +128,11 @@ article footer {
         justify-content: center;
         gap: 14px;
         flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container article footer {
+        margin-top: 15px;
     }
 }

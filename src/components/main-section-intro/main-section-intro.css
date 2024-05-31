@@ -17,6 +17,7 @@
         height: unset;
         max-height: unset;
         padding: unset;
+        max-width: 720px;
     }
 }
 

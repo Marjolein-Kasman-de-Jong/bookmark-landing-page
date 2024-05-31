@@ -1,31 +1,29 @@
 /* Wrapper */
 
-.image-wrapper {
+.intro .image-wrapper {
     position: relative;
     width: 100%;
     aspect-ratio: 720 / 484;
-    border: 1px solid black;
-}
-
-@media screen and (max-width: 768px) {
-    .image-wrapper {
-        aspect-ratio: 375 / 253;
-    }
-}
-
-.intro .image-wrapper {
     max-height: 484px;
 }
 
 @media screen and (max-width: 768px) {
     .intro .image-wrapper {
+        aspect-ratio: 375 / 253;
         max-height: 400px;
     }
 }
 
+.feature-container .image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 720 / 435;
+    max-height: 435px;
+}
+
 /* Image */
 
-.image-wrapper img {
+.intro .image-wrapper img {
     position: absolute;
     top: -10px;
     left: -33px;
@@ -33,7 +31,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .image-wrapper img {
+    .intro .image-wrapper img {
         position: absolute;
         left: 50%;
         transform: translate(-50%);
@@ -45,9 +43,31 @@
     max-width: 574.23px;
 }
 
+.feature-container .image-wrapper img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 76%;
+    max-width: 547px;
+    max-height: 90%;
+    aspect-ratio: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container .image-wrapper img {
+        position: relative;
+        right: unset;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        height: auto;
+        padding: 0 32px;
+    }
+}
+
 /* Background shape */
 
-.image-wrapper .background-shape {
+.intro .image-wrapper .background-shape {
     position: absolute;
     left: 21%;
     bottom: 0;
@@ -59,7 +79,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .image-wrapper .background-shape {
+    .intro .image-wrapper .background-shape {
         position: absolute;
         left: 19%;
         bottom: 0;
@@ -68,5 +88,23 @@
         height: 80%;
         border-radius: 316.5px;
         background-color: var(--soft-blue);
+    }
+}
+
+.feature-container .image-wrapper .background-shape {
+    position: absolute;
+    right: 9%;
+    bottom: 0;
+    z-index: -5;
+    width: 1500px;
+    height: 81%;
+    border-radius: 316.5px;
+    background-color: var(--soft-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container .image-wrapper .background-shape {
+        right: 18vw;
+        height: 86%;
     }
 }

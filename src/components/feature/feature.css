@@ -1,0 +1,30 @@
+.feature-container {
+    margin-top: 72px;
+    display: flex;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.feature-container .image-wrapper,
+.feature-container article {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container .image-wrapper,
+    .feature-container article {
+        width: 100%;
+    }
+}
+
+.feature-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
