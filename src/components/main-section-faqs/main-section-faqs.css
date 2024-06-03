@@ -1,6 +1,8 @@
 .faqs {
     border: 1px solid black;
     margin-top: 149px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
@@ -33,13 +35,23 @@
 }
 
 .faqs-container {
+    width: 100%;
     max-width: 540px;
     margin: 56px auto 0 auto;
 }
 
 @media screen and (max-width: 768px) {
     .faqs-container {
-        margin: 64px 32px 0 32px;
+        padding: 64px 32px 0 32px;
     }
 }
 
+.faqs button {
+    margin: 54px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .faqs button {
+        margin: 48px auto 0 auto;
+    }
+}

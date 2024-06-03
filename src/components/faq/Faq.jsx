@@ -1,17 +1,41 @@
 // Styles
 import './faq.css';
 
-function Faq({ question, answer }) {
+function Faq({ id, question, answer, isOpen, onClick }) {
     return (
-        <section class='faq'>
-            <div class='question'>
+        <section className={`faq ${id}`}>
+            <div
+                className='question'
+                onClick={onClick}
+            >
                 <h3>{question}</h3>
-                <p>X</p>
-                {/* <img src='' alt='' /> */}
+                <div className='arrow-container'>
+                    <svg
+                        className={
+                            isOpen ?
+                                'open'
+                                :
+                                'closed'
+                        }
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='18'
+                        height='12'
+                    >
+                        <path
+                            fill='none'
+                            stroke='#5267DF'
+                            strokeWidth='3'
+                            d='M1 1l8 8 8-8'
+                        />
+                    </svg>
+                </div>
             </div>
-            <div class='answer'>
-                <p>{answer}</p>
-            </div>
+            {
+                isOpen &&
+                <div className='answer'>
+                    <p>{answer}</p>
+                </div>
+            }
         </section>
     );
 }

@@ -1,14 +1,23 @@
+import React, { useState } from 'react';
+
 // Constants
 import faqs from '../../constants/faqs';
 
 // Components
 import Article from '../article/Article';
 import Faq from '../faq/Faq';
+import Button from '../button/Button';
 
 // Styles
 import './main-section-faqs.css';
 
 function MainSectionFaqs() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className='faqs'>
       <Article
@@ -17,11 +26,19 @@ function MainSectionFaqs() {
       />
       <div className='faqs-container'>
         {
-          faqs.map(({ question, answer }) => {
-            return <Faq question={question} answer={answer} />
+          faqs.map(({ id, question, answer }) => {
+            return <Faq
+              key={id}
+              id={id}
+              question={question}
+              answer={answer}
+              isOpen={openIndex === id}
+              onClick={() => handleClick(id)}
+            />
           })
         }
       </div>
+      <Button type='regular' buttonText='More info' />
     </section>
   );
 }
