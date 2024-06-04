@@ -1,0 +1,108 @@
+.page-footer {
+    width: 100%;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--very-dark-blue);
+}
+
+.page-footer-wrapper {
+    width: 100%;
+    max-width: 1110px;
+    height: 88px;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .page-footer-wrapper {
+        height: unset;
+        margin: 40px 0;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.page-footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .page-footer ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+.page-footer li {
+    height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .page-footer li {
+        height: unset;
+    }
+}
+
+.page-footer li:first-of-type {
+    margin-right: 19px;
+}
+
+@media screen and (max-width: 768px) {
+    .page-footer li:first-of-type {
+        margin-right: unset;
+        margin-bottom: 7px;
+    }
+}
+
+.page-footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.0625rem;
+    letter-spacing: 0.09375rem;
+}
+
+@media screen and (max-width: 768px) {
+    .page-footer ul li a {
+        font-size: 0.9375rem;
+        letter-spacing: 0.10819rem;
+    }
+}
+
+.page-footer ul li a:hover {
+    color: var(--soft-red);
+}
+
+.socials-container {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .socials-container {
+        height: unset;
+        margin-top: 8px;
+    }
+}
+
+.socials-container *:hover {
+    cursor: pointer;
+    fill: var(--soft-red);
+}

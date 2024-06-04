@@ -95,6 +95,13 @@
     width: 300px;
 }
 
+@media screen and (max-width: 768px) {
+    .input-container {
+        width: 100%;
+        max-width: 311px;
+    }
+}
+
 .input-container.error {
     border-radius: 5px;
     background-color: var(--soft-red);
