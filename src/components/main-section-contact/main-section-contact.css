@@ -1,0 +1,146 @@
+.contact {
+    margin-top: 149px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--soft-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        margin-top: 123px;
+    }
+}
+
+.contact header {
+    margin-top: 58px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact header {
+        margin-top: 60px;
+    }
+
+}
+
+.contact header hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    .contact header hgroup {
+        gap: unset;
+    }
+}
+
+.contact header hgroup p {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .contact header hgroup p {
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.28844rem;
+    }
+}
+
+.contact header hgroup h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    letter-spacing: -0.00625rem;
+    text-transform: none;
+    padding: 0 32px;
+    max-width: 540px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact header hgroup h2 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        letter-spacing: -0.00469rem;
+    }
+}
+
+.contact form {
+    margin-top: 36px;
+    margin-bottom: 74px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact form {
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 60px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 32px;
+    }
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container.error {
+    border-radius: 5px;
+    background-color: var(--soft-red);
+}
+
+.input-container p {
+    margin: 4px 12px;
+    color: var(--white);
+    font-size: 0.625rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.01563rem;
+}
+
+.contact input {
+    width: 300px;
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact .input-container.error input {
+    padding: 0 40px 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact input {
+        width: 100%;
+        max-width: 311px;
+    }
+}
+
+.contact input::placeholder {
+    color: var(--grayish);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0.01563rem;
+}
+
+.contact svg {
+    position: absolute;
+    top: 14px;
+    left: calc(100% - 34px);
+}

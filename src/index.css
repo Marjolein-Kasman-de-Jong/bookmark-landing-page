@@ -34,9 +34,10 @@ button {
   --soft-red: hsl(0, 94%, 66%);
   --light-gray: #F7F7F7;
   --gray: #5B6074;
+  --grayish: rgba(36, 42, 69, 0.25);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
-}
+}  
 
 /* Typography */
 

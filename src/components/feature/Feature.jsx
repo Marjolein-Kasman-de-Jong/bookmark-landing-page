@@ -8,11 +8,6 @@ import Article from '../article/Article';
 import './feature.css';
 
 function Feature({ title, text, image }) {
-  // Get current rendered feature from url
-  const location = useLocation();
-  const currentPath = location.pathname;
-  console.log(currentPath);
-
   return (
     <div className='feature-container'>
       <Image image={image}/>
