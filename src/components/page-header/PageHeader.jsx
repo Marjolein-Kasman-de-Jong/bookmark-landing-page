@@ -44,7 +44,7 @@ function PageHeader() {
           </div>
           <div className='wrapper-2'>
             <li>
-              <a href='#'>
+              <a href='#features'>
                 features
               </a>
             </li>
@@ -54,7 +54,7 @@ function PageHeader() {
               </a>
             </li>
             <li>
-              <a href='#'>
+              <a href='#contact'>
                 contact
               </a>
             </li>
@@ -93,7 +93,7 @@ function PageHeader() {
             </a>
           </li>
           <li className='hideOnMobile'>
-            <a href='#'>
+            <a href='#features'>
               features
             </a>
           </li>
@@ -103,7 +103,7 @@ function PageHeader() {
             </a>
           </li>
           <li className='hideOnMobile'>
-            <a href='#'>
+            <a href='#contact'>
               contact
             </a>
           </li>

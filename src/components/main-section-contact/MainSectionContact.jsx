@@ -25,7 +25,7 @@ function MainSectionContact() {
   }
 
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
       <header>
         <hgroup>
           <p>35,000+ already joined</p>
