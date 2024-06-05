@@ -15,7 +15,7 @@
 .feature-container article {
     width: 50%;
     animation-name: show;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 @media screen and (max-width: 768px) {
