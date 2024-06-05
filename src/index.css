@@ -59,6 +59,10 @@ img {
 
 /* Animations */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes show {
   0% {opacity: 0;}
   100% {opacity: 1;}
