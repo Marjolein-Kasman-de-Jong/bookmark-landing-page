@@ -10,12 +10,12 @@ The challenge was to build out the landing page and get it looking as close to t
      * The input field is empty
      * The email address is not formatted correctly
 
-### Languages
+## Languages
 
 * HTML
 * CSS
 * JavaScript
 
-### Libraries
+## Libraries
 
 * React
