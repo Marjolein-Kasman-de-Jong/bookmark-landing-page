@@ -15,7 +15,6 @@ function Tabs() {
     return (
         <Router>
             <div>
-
                 <nav className='tabs'>
                     <ul>
                         <li>

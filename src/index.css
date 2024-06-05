@@ -37,7 +37,7 @@ button {
   --grayish: rgba(36, 42, 69, 0.25);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
-}  
+}
 
 /* Typography */
 
@@ -55,4 +55,11 @@ body {
 
 img {
   width: 100%;
+}
+
+/* Animations */
+
+@keyframes show {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
