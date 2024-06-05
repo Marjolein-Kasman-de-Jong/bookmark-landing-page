@@ -84,13 +84,22 @@ article p {
     opacity: .5;
 }
 
+@media screen and (min-width: 769px) and (max-width: 975px) {
+    .feature-container article h2 {
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+    
+    .feature-container article p {
+        font-size: 1rem;
+        line-height: 115%;
+    }
+}
+
+
 .intro article p,
 .feature-container article p {
     text-align: left;
-}
-
-.feature article p {
-    background-color: red;
 }
 
 @media screen and (max-width: 768px) {
@@ -144,6 +153,12 @@ article footer {
     display: flex;
     gap: 16px;
     margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 975px) {
+    article footer {
+        margin-top: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {

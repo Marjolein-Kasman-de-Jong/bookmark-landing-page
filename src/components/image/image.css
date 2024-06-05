@@ -1,3 +1,7 @@
+.feature-container article {
+    max-height: 240px;
+}
+
 /* Wrapper */
 
 .intro .image-wrapper {
@@ -16,9 +20,7 @@
 
 .feature-container .image-wrapper {
     position: relative;
-    width: 100%;
-    aspect-ratio: 720 / 435;
-    max-height: 420px;
+    aspect-ratio: 712 / 435;
 }
 
 /* Image */
@@ -40,13 +42,36 @@
     }
 }
 
-.feature-container .image-wrapper img {
+.feature-container .image-wrapper {
+    aspect-ratio: 712 / 435;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container .image-wrapper {
+        aspect-ratio: 375 / 238;
+    }
+}
+
+.feature-container .image-wrapper .image-container {
     position: absolute;
     top: 0;
     right: 0;
-    width: 76%;
-    max-width: 547px;
-    aspect-ratio: auto;
+    aspect-ratio: 547 / 416;
+    height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container .image-wrapper .image-container {
+        aspect-ratio: unset;
+        max-width: 100%;
+        aspect-ratio: 375 / 238;
+        position: unset;
+        margin: 0 auto;
+    }
+}
+
+.feature-container .image-wrapper .image-container img {
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -90,10 +115,11 @@
 .feature-container .image-wrapper .background-shape {
     position: absolute;
     right: 9%;
-    top: 50px;
+    /* top: 50px; */
+    bottom: 0;
     z-index: -5;
     width: 1500px;
-    height: 81%;
+    height: 80%;
     aspect-ratio: 1500 / 290;
     border-radius: 316.5px;
     background-color: var(--soft-blue);
